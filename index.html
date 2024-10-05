@@ -8,21 +8,14 @@
 </head>
 <body>
     <script src="script.js"></script>
-    <video id="preview"></video>
-    <script type="text/javascript">
-      let scanner = new Instascan.Scanner({ video: document.getElementById('preview') });
-      scanner.addListener('scan', function (content) {
-        console.log(content);
-      });
-      Instascan.Camera.getCameras().then(function (cameras) {
-        if (cameras.length > 0) {
-          scanner.start(cameras[0]);
-        } else {
-          console.error('No cameras found.');
-        }
-      }).catch(function (e) {
-        console.error(e);
-      });
-    </script>
+    <div id="ctn">
+        <span id="pos-text">You are at <span id="node-text">Node 2</span></span>
+        <div id="input-ctn">
+            <span id="text-1">Where do you want to go?</span>
+            <form action="">
+                <input type="text" name="destination" id="destination">
+            </form>
+        </div>
+    </div>
 </body>
 </html>
