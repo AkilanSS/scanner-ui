@@ -47,14 +47,33 @@ body{
             font-weight: bold;
             font-size: 10pt;
         }
+        form{
+            display: flex;
+            flex-direction: column;
 
-        #destination{
-            margin: 5px 10px 10px 35px;
-            padding: 5px;
-            width: 75%;
-            border: 2px solid black;
-            border-radius: 5px;
+            #destination{
+                margin: 5px 10px 10px 35px;
+                padding: 5px;
+                width: 75%;
+                border: 2px solid black;
+                border-radius: 5px;
+            }
+    
+            button{
+                width: 50%;
+                margin: 5px;
+                padding: 10px;
+                align-self: center;
+
+                background-color: black;
+                color: #FEFEFA;
+                border: none;
+                border-radius: 5px;
+
+                font-weight: bold;
+            }
         }
+        
     }
 
 
