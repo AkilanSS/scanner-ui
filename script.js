@@ -34,9 +34,9 @@ document.addEventListener('DOMContentLoaded', function(event) {
     };
   
     function deviceOrientationHandler(tiltLR, tiltFB, dir) {
-      /* document.getElementById('tiltLR').innerHTML = Math.ceil(tiltLR);
+      document.getElementById('tiltLR').innerHTML = Math.ceil(tiltLR);
       document.getElementById('tiltFB').innerHTML = Math.ceil(tiltFB);
-      document.getElementById('direction').innerHTML = Math.ceil(dir); */
+      document.getElementById('direction').innerHTML = Math.ceil(dir);
       // Rotate the disc of the compass. - CSS transform
       const compassDisc = document.getElementById('compassDiscImg');
       compassDisc.style.transform = `rotate(${dir}deg)`;
