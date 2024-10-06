@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <script src="script.js"></script>
     <div id="ctn">
         <span id="pos-text">You are at <span id="node-text">Node 2</span></span>
         <div id="input-ctn">
             <span id="text-1">Where do you want to go?</span>
-            <form action="">
-                <input type="text" name="destination" id="destination">
-                <button>Locate</button>
+            <form id="destinationForm">
+                <input type="text" name="destination" id="destination" required>
+                <button type="submit" id="locate">Locate</button>
             </form>
         </div>
     </div>
