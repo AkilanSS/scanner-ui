@@ -4,14 +4,18 @@ document.addEventListener('DOMContentLoaded', () => {
         destinationForm.addEventListener('submit', function(event) {
             event.preventDefault();
             const destinationInput = document.getElementById('destination').value;
-            localStorage.setItem('destinationNode', destinationInput);
+            localStorage.setItem('locationNode', destinationInput);
             window.location.href = 'display.html';
         });
     }
 
-    const destinationOutput = document.getElementById('node-out');
-    const storedDestination = localStorage.getItem('destinationNode');
-    destinationOutput.textContent = storedDestination;  
+    const locationOutput = document.getElementById('text-2');
+    const storedLocation = localStorage.getItem('locationNode');
+    locationOutput.textContent = storedLocation; 
+
+    const destinaionOutput = document.getElementById('node-out');
+    destinaionOutput.textContent = 'dsaa';
+    
 
 });
 
